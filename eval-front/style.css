@@ -4,6 +4,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
     background-color: lightgray;
 }
@@ -32,8 +34,8 @@ div > div > div {
     float: left;
     display: inline-block;
     width: 33.2%;
-    height: auto;
-    padding: 52px 0 52px 0;
+    height: 12.5rem;
+    padding-top: 2rem;
     text-align: center;
     color: white;
     transition: background-color 1s;
@@ -57,9 +59,10 @@ div img {
  */
 
 #general_info {
-    width: 59.3%;
-    height: auto;
-    padding: 46px 30px;
+    width: 62.5%;
+    height: 12.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
     text-align: left;
     color: white;
 }
@@ -157,22 +160,22 @@ h1 {
 * Responsive
  */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1470px){
 
     .left {
-        width: 100%;
+        width: 90%;
         display: block;
         margin: 2rem auto;
         float: none;
     }
 
     #general_info {
-        width: 60%;
-        height: 11.5rem;
+        height: 14rem;
+        width: 63.5%;
     }
 
     div > div > div {
-        height: 11rem;
+        height: 14rem;
     }
 
     .right {
@@ -184,13 +187,22 @@ h1 {
     .right img {
         margin-top: 2rem;
     }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    #general_info {
+        width: 63%;
+    }
+
 }
 
 @media screen and (max-width: 1090px) {
 
     #general_info {
-        width: 93%;
-        font-size: 1.2rem;
+        width: 96%;
+        font-size: 1rem;
     }
 
     div > div > div {
@@ -202,7 +214,7 @@ h1 {
     }
 
     .right {
-        width: 100%;
+        width: 90%;
     }
 
     .right img {
@@ -210,8 +222,34 @@ h1 {
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 670px){
+
     #general_info {
-        font-size: 1.2rem;
+        width: 94%;
     }
+
+    #general_info p {
+        padding-right: 1rem;
+    }
+
+    div > div > div img {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 440px){
+
+    #general_info {
+        width: 92%;
+    }
+
+    div > div > div {
+        height: 12rem;
+    }
+
+    .arrows_position {
+        bottom: 300px;
+    }
+
 }

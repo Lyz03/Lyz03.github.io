@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleDUN.css">
     <title>Deviner un nombre</title>
 </head>
 <body>
+    <div>
+        <h1>Devinez un nombre</h1>
+        <p>Un nombre a été généré aléatoirement, entre 0 et 100. Vous avez 10 essays pour le deviner.</p>
+    </div>
+    <div class="form">
+        <label for="user_guess">Enter votre proposition : </label>
+        <input id="user_guess" type="text">
 
+        <input id="guess_submit" type="submit" value="envoyer">
+    </div>
+
+    <div class="div_result">
+        <p id="guess_count"></p>
+        <p id="last_result"></p>
+        <p id="low_or_hi"></p>
+    </div>
+
+    <script src="appDUN.js"></script>
 </body>
 </html>

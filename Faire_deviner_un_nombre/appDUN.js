@@ -1,5 +1,9 @@
 let randomNumber = Math.floor(Math.random() * 100);
 
+if (randomNumber === 0) {
+    randomNumber = 1;
+}
+
 let submit = document.getElementById('guess_submit');
 let userGuess = document.getElementById('user_guess');
 
@@ -12,6 +16,12 @@ let resetButton;
 
 
 submit.addEventListener("click", checkGuesses);
+
+document.body.addEventListener("keypress", function (e) {
+    if (e.key === 'Enter') {
+        checkGuesses()
+    }
+});
 
 // check what the guess and what to do with it
 function checkGuesses() {
@@ -39,6 +49,7 @@ function checkGuesses() {
     }
     guessCount++;
     userGuess.value = '';
+    userGuess.focus();
 }
 
 // disable submit and add a reset button

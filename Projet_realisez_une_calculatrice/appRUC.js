@@ -75,6 +75,15 @@ document.getElementById('comma').addEventListener("click", function () {
     screen.value += '.';
 });
 
+//parenthesis
+document.getElementById('parenthesisO').addEventListener('click', function (){
+    screen.value += '('
+});
+
+document.getElementById('parenthesisC').addEventListener('click', function (){
+    screen.value += ')'
+});
+
 // clean
 document.getElementById('c').addEventListener('click', function () {
     screen.value = '';
@@ -83,7 +92,8 @@ document.getElementById('c').addEventListener('click', function () {
 // equal
 document.getElementById('equal').addEventListener("click", calc);
 
-
+// copy
+document.getElementById('copy').addEventListener('click', copy);
 
 
 // calc for you :
@@ -92,3 +102,9 @@ function calc() {
     screen.value = eval(screen.value.toString());
 }
 
+// copy the result
+function copy() {
+    let copyText = document.querySelector("#screen");
+    copyText.select();
+    document.execCommand("copy");
+}

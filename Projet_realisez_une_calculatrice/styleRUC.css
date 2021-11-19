@@ -53,6 +53,10 @@ div button {
     background-color: #76889a;
 }
 
+.gray:hover {
+    background-color: #b6b6b6;
+}
+
 @media screen and (max-width: 1020px) {
     section {
         width: 50%;

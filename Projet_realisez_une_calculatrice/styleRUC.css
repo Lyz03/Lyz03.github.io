@@ -1,0 +1,86 @@
+section {
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section div {
+    width: 100%;
+    height: 4.5rem;
+    margin: 5px;
+}
+
+div button {
+    height: 100%;
+    width: 23.5%;
+    border: none;
+}
+
+.l1 button, .l5 button{
+    width: 32%;
+}
+
+#screen {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    border: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+.green {
+    background-color: #c3d7b7;
+}
+
+.blue_green {
+    background-color: #9ad5d5;
+}
+
+.blue {
+    background-color: #9eb5ca;
+}
+
+.green:hover {
+    background-color: #a0af97;
+}
+
+.blue_green:hover {
+    background-color: #7dadad;
+}
+
+.blue:hover {
+    background-color: #76889a;
+}
+
+@media screen and (max-width: 1020px) {
+    section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    section {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section {
+        width: 100%;
+    }
+    section div {
+        width: 90%;
+        height: 3rem;
+    }
+    div button {
+        height: 100%;
+        width: 23%;
+    }
+}

@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #baa3d5;
+}
+
+label {
+    color: #aac7cd;
+}
+
+input[type='text'] {
+    border: 1px solid lightgray;
+    padding: 0.3rem;
+    border-radius: 10px;
+    color: gray;
+}
+
+button {
+    border: none;
+    background-color: #9ab1d5;
+    padding: 0.3rem;
+    color: white;
+}
+
+.container {
+    display: none;
+    margin: 20px auto;
+    border: 1px solid #d3c1c5;
+    border-radius: 20px;
+    width: 70%;
+    padding: 1rem;
+}
+
+#story {
+    color: gray;
+    text-align: left;
+}
